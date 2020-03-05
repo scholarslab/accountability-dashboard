@@ -1,0 +1,117 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,body {
+  margin:0;
+  padding:0;
+  width: 100%;
+}
+body {
+  font: 18px/1.5 "Helvetica Neue",Helvetica, Arial, sans-serif;
+  color: #333;
+  display:flex;
+  flex-direction: column;
+}
+
+#banner {
+  padding: 1rem;
+  display:flex;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-image: url('funky-lines.png');
+}
+
+#banner.home {
+  height:70vh;
+  padding: 3rem;
+}
+
+#banner h1 {
+  font-size: 1rem;
+}
+#banner.home h1 {
+}
+
+#banner h1 em {
+  display:block;
+  font-size: 3rem;
+  font-style: normal;
+}
+header h1 a:link,
+header h1 a {
+  color: #333 !important;
+  text-decoration:none;
+}
+a:link,
+a:visited {
+  color: rgba(0,150,255, .9);
+}
+
+nav a {
+  text-decoration: none;
+}
+
+header nav {
+  background: #ccc;
+  display:flex;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+
+#globalnav {
+  display:flex;
+  flex-direction: row;
+  flex-wrap:nowrap;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+#globalnav section {
+  width: 23vw;
+}
+
+#globalnav a {
+  display:block;
+}
+main {
+  width: 100%;
+  display:block;
+}
+
+main nav a {
+  display:block;
+  text-decoration:none;
+}
+
+main header,
+main section {
+  padding: 3rem;
+  display:flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+main header {
+  min-height: 80vh;
+  background: rgba(0,0,0,0.125);
+  justify-content: center;
+}
+
+main section {
+  min-height: 100vh;
+}
+
+main section:before {
+  content: " ";
+  width: 4rem;
+  height: .25rem;
+  background: #999;
+  margin: 0 auto;
+}
