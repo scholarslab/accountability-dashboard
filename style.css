@@ -16,6 +16,12 @@ body {
   flex-direction: column;
 }
 
+figure img {
+  display:block;
+  max-width:100%;
+  width: auto;
+  height: auto;
+}
 #banner {
   padding: 1rem;
   display:flex;
